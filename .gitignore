@@ -1,0 +1,52 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ===== 数据文件 =====
+# 为什么不提交：Git 擅长管文本，不适合管几十 MB 的仪器原始数据。
+# 数据放网盘，脚本放仓库，这是通用做法。
+*.csv
+*.xlsx
+*.xls
+*.dat
+*.txt
+!实验数据处理/示例数据.csv
+raw_data/
+原始数据/
+data/
+
+# ===== 输出与临时 =====
+output/
+temp/
+tmp/
+*.log
+*.png
+*.jpg
+*.pdf
+!静态图/
+
+# ===== 编辑器与工具 =====
+.vscode/
+.idea/
+*.swp
+*~
+
+# ===== Windows =====
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ===== 密钥（务必不要提交）=====
+*.key
+*.pem
+.env
+credentials.json
